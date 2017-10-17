@@ -1,4 +1,6 @@
-const square = function (x) {
+'use strict';
+
+var square = function square(x) {
   return x * x;
 };
 
@@ -13,22 +15,23 @@ console.log(square(8));
   return x * x;
 };*/
 
-
 // now recreating the above using arrow expression syntax
 
 
-const squareArrow =  (x) => x * x;
+var squareArrow = function squareArrow(x) {
+  return x * x;
+};
 //this expression is more concise and implicity states return
 console.log(squareArrow(9));
 
 //Challenge use arrow functions
 
-const fullName = 'Tehut Addis';
-let firstName;
+var fullName = 'Tehut Addis';
+var firstName = void 0;
 
-const getFirstName = (fullname) => {
+var getFirstName = function getFirstName(fullname) {
   firstName = fullName.split(' ')[0];
   return firstName;
-}
+};
 
 console.log(getFirstName(fullName));
